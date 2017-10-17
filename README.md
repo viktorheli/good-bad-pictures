@@ -53,6 +53,12 @@ bad     100
 
 good    0
 
+3. If you are use neural network in web projects reasonable strategy may be loading network in memory as a daemon and use it permanently in hidden server throgh web web requests from other computers.   
+Script good-bad-daemon.lua - is a daemon for listening tcp port and wait picture from client. In response daemon send to client probabilty in each categories. As example:
+
+bad: 99.767
+
+good: 0.233
 
 
 Links
@@ -95,3 +101,7 @@ optim - luarocks install optim
 cutorch - luarocks install cutorch
 
 cunn - luarocks install cutorch
+
+waffle - 
+
+cudnn - 
