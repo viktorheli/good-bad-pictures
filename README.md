@@ -14,7 +14,9 @@ This script has two parameters:
 For example use:
 th make-my-dataset.lua -filename for-github.t7 -path dataset/train/
 
+
 2. pic-train-test.lua - script to training netwoks and forwarding images through network
+
 
 This script has following parameters:
 
@@ -50,6 +52,10 @@ In this case we will see probability of categories:
 bad     100
 
 good    0
+
+
+
+Links
 
 Simple dataset with 90 images can bee downloaded here:
 
