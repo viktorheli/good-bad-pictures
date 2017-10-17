@@ -42,7 +42,7 @@ How to use:
 
 For training: 
 
-th fotograf-cuda.lua -storenet github.dat -clearnet github-clear.dat -trainset for-github.t7 -testset for-github-test.t7 -train 100
+th pic-train-test.lua -storenet github.dat -clearnet github-clear.dat -trainset for-github.t7 -testset for-github-test.t7 -train 100
 
 Forwarding any image throgh net:
 
