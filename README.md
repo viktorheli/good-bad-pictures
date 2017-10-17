@@ -54,11 +54,43 @@ bad     100
 good    0
 
 3. If you are use neural network in web projects reasonable strategy may be loading network in memory as a daemon and use it permanently in hidden server throgh web web requests from other computers.   
-Script good-bad-daemon.lua - is a daemon for listening tcp port and wait picture from client. In response daemon send to client probabilty in each categories. As example:
+Script good-bad-daemon.lua - is a daemon for listening tcp port and wait picture from client. In response, the daemon send to the client, probabilty in each categories. As example:
 
 bad: 99.767
 
 good: 0.233
+
+
+4. Not everyone has a GPU in servers for processing neural networks. :) In this case the better solution may be following: 
+
+Train you model on GPU in you workstation or Amazon cloud 
+Convert model from CUDA to CPU.
+Use the model in you ouwn server without GPU. 
+Profit! :) 
+
+This solution work better in case when workload is not big and time to processing images is not very critical parameter. 
+
+Simple script convert-cuda-cpu.lua help as to convert CUDA model to CPU model.
+
+Script has following key parameters:
+
+  -cudamodel Filename with cuda neuralnet.
+
+  -cpumodel  Filename to save converted cpu model
+
+Example use:
+
+th convert-cuda-cpu.lua -cudamodel github.dat -cpumodel github-cpu.dat
+----Loading CUDA model----
+Loding completed in: 274ms
+
+----Converting model----
+Converting completed in: 171ms
+
+----Saving CPU model----
+Saving CPU model completed in: 252ms
+
+All done successfully. CPU model saved to file: github-cpu.dat
 
 
 Links
