@@ -73,7 +73,7 @@ Profit! :)
 
 This solution work better in case when workload is not big and time to processing images is not very critical parameter. 
 
-Simple script convert-cuda-cpu.lua help as to convert CUDA model to CPU model.
+Simple script convert-cuda-cpu.lua help us to convert CUDA model to CPU model.
 
 Script has following key parameters:
 
