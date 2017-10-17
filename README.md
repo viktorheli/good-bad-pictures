@@ -15,6 +15,7 @@ For example use:
 th make-my-dataset.lua -filename for-github.t7 -path dataset/train/
 
 2. pic-train-test.lua - script to training netwoks and forwarding images through network
+
 This script has following parameters:
 
 -batchsize size of batch for training. Default is 5
@@ -47,7 +48,26 @@ th pic-train-test.lua -img dataset/test/bad/534fac49dbcedb597a8b4e9e.jpg -clearn
 In this case we will see probability of categories:
 
 bad     100
+
 good    0
+
+Simple dataset with 90 images can bee downloaded here:
+
+https://www.dropbox.com/s/273dg4ecesqhu67/for-github.t7.tar.gz?dl=0
+
+Testset with 10 images can bee downloaded here:
+
+https://www.dropbox.com/s/pbp07g7686cmjwc/for-github-test.t7.tar.gz?dl=0
+
+A bit pretrained model with training data can be downloaded here:
+
+https://www.dropbox.com/s/6jfns1kawqnfxrt/github.dat.tar.gz?dl=0
+
+Clear model without training data can be downloaded here: 
+
+https://www.dropbox.com/s/sqdgk2kfyxb2t0g/github-clear.dat.tar.gz?dl=0
+
+
 
 
 What need for work:
