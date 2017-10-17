@@ -2,7 +2,7 @@
 Neuralnet filter for good or bad pictures. Created for personalizing filtering for pictures feed in https://agakat.com project. 
 We create dataset and train neural network to distinguish between bad and good pictures. The neural network will filter the pictures according to the preferences of the one who chose the pictures for the dataset. If you take a large set of pictures from different people, then the filter will be more universal. To simple learning the network enough 100 pictures for each category. 
 
-##This project consist of several scripts:
+This project consist of several scripts:
 
 1. make-my-dataset.lua - create dataset in t7 fromat from pre-selected pictures. Need two categories - GOOD and BAD, also with this script we created test dataset. 
 This script has two parameters:
