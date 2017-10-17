@@ -13,12 +13,21 @@ th make-my-dataset.lua -filename for-github.t7 -path dataset/train/
 
 
 What need for work:
+
 Nvidia CUDA
+
 Torch - http://torch.ch/
+
 And modules:
+
 paths - luarocks install paths
+
 image - luarocks instal image
+
 nn - luarocks install nn
+
 optim - luarocks install optim
+
 cutorch - luarocks install cutorch
+
 cunn - luarocks install cutorch
