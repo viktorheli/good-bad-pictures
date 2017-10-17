@@ -2,9 +2,9 @@
 Neuralnet filter for good or bad pictures. Created for personalizing filtering for pictures feed in https://agakat.com project. 
 We create dataset and train neural network to distinguish between bad and good pictures. The neural network will filter the pictures according to the preferences of the one who chose the pictures for the dataset. If you take a large set of pictures from different people, then the filter will be more universal. To simple learning the network enough 100 pictures for each category. 
 
-This project consist of several scripts:
+## This project consist of several scripts:
 
-1. make-my-dataset.lua - create dataset in t7 fromat from pre-selected pictures. Need two categories - GOOD and BAD, also with this script we created test dataset. 
+## 1. make-my-dataset.lua - create dataset in t7 fromat from pre-selected pictures. Need two categories - GOOD and BAD, also with this script we created test dataset. 
 This script has two parameters:
 
 -path Path to train or test dataset in flat structure. For example train/bad and train/good
@@ -15,7 +15,7 @@ For example use:
 th make-my-dataset.lua -filename for-github.t7 -path dataset/train/
 
 
-2. pic-train-test.lua - script to training netwoks and forwarding images through network
+## 2. pic-train-test.lua - script to training netwoks and forwarding images through network
 
 
 This script has following parameters:
@@ -53,7 +53,7 @@ bad     100
 
 good    0
 
-3. If you are use neural network in web projects reasonable strategy may be loading network in memory as a daemon and use it permanently in hidden server throgh web web requests from other computers.   
+## 3. If you are use neural network in web projects reasonable strategy may be loading network in memory as a daemon and use it permanently in hidden server throgh web web requests from other computers.   
 Script good-bad-daemon.lua - is a daemon for listening tcp port and wait picture from client. In response, the daemon send to the client, probabilty in each categories. As example:
 
 bad: 99.767
@@ -61,7 +61,7 @@ bad: 99.767
 good: 0.233
 
 
-4. Not everyone has a GPU in servers for processing neural networks. :) In this case the better solution may be following: 
+## 4. Not everyone has a GPU in servers for processing neural networks. :) In this case the better solution may be following: 
 
 Train you model on GPU in you workstation or Amazon cloud 
 Convert model from CUDA to CPU.
@@ -93,7 +93,7 @@ Saving CPU model completed in: 252ms
 All done successfully. CPU model saved to file: github-cpu.dat
 
 
-Links
+## Links
 
 Simple dataset with 90 images can bee downloaded here:
 
