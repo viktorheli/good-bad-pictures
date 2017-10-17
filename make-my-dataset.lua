@@ -34,7 +34,6 @@ count = 0
                 table.insert(dir, name)
         end
 
-
 --creating table of files and lebeling files
 imgdata = {}
 ll = {} -- lebels in numbers aka 1, 2, 3
