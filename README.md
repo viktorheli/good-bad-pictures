@@ -118,22 +118,22 @@ What need for work:
 
 Nvidia CUDA
 
-Torch - http://torch.ch/
+Torch - http://torch.ch/ or https://github.com/torch
 
 And modules:
 
-paths - luarocks install paths
+paths - https://github.com/torch/paths
 
-image - luarocks instal image
+image - https://github.com/torch/image
 
-nn - luarocks install nn
+nn - https://github.com/torch/nn
 
-optim - luarocks install optim
+optim - https://github.com/torch/optim
 
-cutorch - luarocks install cutorch
+cutorch - https://github.com/torch/cutorch
 
-cunn - luarocks install cutorch
+cunn - https://github.com/torch/cunn
 
-waffle - 
+waffle - https://github.com/benglard/waffle
 
-cudnn - 
+cudnn - https://github.com/soumith/cudnn.torch
