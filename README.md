@@ -5,7 +5,9 @@ We create dataset and train neural network to distinguish between bad and good p
 This project consist of several scripts:
 1. make-my-dataset.lua - create dataset in t7 fromat from pre-selected pictures. Need two categories - GOOD and BAD, also with this script we created test dataset. 
 This script has two parameters:
+
 -path Path to train or test dataset in flat structure. For example train/bad and train/good
+
 -filename Filename for saving our dataset. For example my-trainset.t7
 
 For example use:
